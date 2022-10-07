@@ -49,9 +49,9 @@
     <main>
       <!--Hero section-->
       <section class="hero">
-        <div class="hero-overlay"></div>
-        <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+        <div class="hero__overlay"></div>
+        <h1 class="hero__header">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </section>
       <!--Section  qualities -->
       <section class="section">
@@ -463,69 +463,69 @@
         </button>
         <!--speaker-form-->
         <form class="speaker-form" autocomplete="off">
-          <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="form-element">
-            <label for="name" class="form-label">Ім'я</label>
-            <div class="svg-form svg-hover">
-              <input type="text" id="name" class="form-input" required /><svg
-                class="form-icon-name"
+          <p class="speaker-form__title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="speaker-form__element">
+            <label for="name" class="speaker-form__label">Ім'я</label>
+            <div class="speaker-form__svg">
+              <input type="text" id="name" class="speaker-form__input" required /><svg
+                class="speaker-form__icon-characteristic"
               >
                 <use href="./images/icons.svg#icon-Vector-4"></use>
               </svg>
             </div>
           </div>
-          <div class="form-element">
-            <label for="tel" class="form-label">Телефон</label>
-            <div class="svg-form">
-              <input type="tel" name="tel" id="tel" class="form-input" /><svg class="form-icon-tel">
+          <div class="speaker-form__element">
+            <label for="tel" class="speaker-form__label">Телефон</label>
+            <div class="speaker-form__svg">
+              <input type="tel" name="tel" id="tel" class="speaker-form__input" /><svg class="icon-tel speaker-form__icon-characteristic">
                 <use href="./images/icons.svg#icon-Vector-5"></use>
               </svg>
             </div>
           </div>
-          <div class="form-element">
-            <label for="email" class="form-label">Пошта</label>
-            <div class="svg-form">
-              <input type="email" name="mail" id="email" class="form-input" /><svg
-                class="form-icon-mail"
+          <div class="speaker-form__element">
+            <label for="email" class="speaker-form__label">Пошта</label>
+            <div class="speaker-form__svg">
+              <input type="email" name="mail" id="email" class="speaker-form__input" /><svg
+                class="icon-mail speaker-form__icon-characteristic"
               >
                 <use href="./images/icons.svg#icon-Vector-6"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-element">
-            <label for="comment" class="form-label">Коментар</label>
+          <div class="speaker-form__element">
+            <label for="comment" class="speaker-form__label">Коментар</label>
             <textarea
               name="comment"
               id="comment"
               rows=""
               placeholder="Введіть текст"
-              class="form-textarea"
+              class="speaker-form__textarea"
             ></textarea>
           </div>
 
-          <div class="accept">
+          <div class="conditions">
             <input
               type="checkbox"
               id="accept"
               name="accept"
-              class="check visually-hidden"
+              class="conditions__check visually-hidden"
               required
             />
-            <label for="accept" class="form-policy">
+            <label for="accept" class="conditions__policy">
               <div class="checkbox">
-                <svg class="checkebox-icon">
-                  <use class="check-vectop" href="./images/icons.svg#icon-Vector-8"></use>
+                <svg class="checkebox__icon">
+                  <use class="checkebox__vectop" href="./images/icons.svg#icon-Vector-8"></use>
                 </svg>
               </div>
               Погоджуюся з розсилкою та приймаю
-              <div class="current">
-                <a class="form-link" href="">Умови договору</a>
+              <div class="checkebox__current">
+                <a class="checkebox__link" href="">Умови договору</a>
               </div>
             </label>
           </div>
           <div class="btm-form">
-            <button type="submit" class="button-form">Відправити</button>
+            <button type="submit" class="btm-form__button">Відправити</button>
           </div>
         </form>
       </div>
