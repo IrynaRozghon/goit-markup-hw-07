@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -49,14 +49,13 @@
     <main>
       <!--Hero section-->
       <section class="hero">
-        <div class="hero__overlay"></div>
         <h1 class="hero__header">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
       </section>
       <!--Section  qualities -->
       <section class="section">
         <div class="container">
-          <h2 class="qualities">Якості</h2>
+          <h2 class="visually-hidden">Якості</h2>
           <ul class="gualities-ul">
             <li class="qualities-list">
               <div class="icons-qualities">
@@ -456,8 +455,8 @@
     <!--Backdrop-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-modal" data-modal-close>
-          <svg class="modal-icon">
+        <button type="button" class="modal__close" data-modal-close>
+          <svg class="modal__icon">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
@@ -468,7 +467,7 @@
             <label for="name" class="speaker-form__label">Ім'я</label>
             <div class="speaker-form__svg">
               <input type="text" id="name" class="speaker-form__input" required /><svg
-                class="speaker-form__icon-characteristic"
+                class="speaker-form__icon--characteristic"
               >
                 <use href="./images/icons.svg#icon-Vector-4"></use>
               </svg>
@@ -477,7 +476,7 @@
           <div class="speaker-form__element">
             <label for="tel" class="speaker-form__label">Телефон</label>
             <div class="speaker-form__svg">
-              <input type="tel" name="tel" id="tel" class="speaker-form__input" /><svg class="icon-tel speaker-form__icon-characteristic">
+              <input type="tel" name="tel" id="tel" class="speaker-form__input" /><svg class="icon-tel speaker-form__icon--characteristic">
                 <use href="./images/icons.svg#icon-Vector-5"></use>
               </svg>
             </div>
@@ -486,7 +485,7 @@
             <label for="email" class="speaker-form__label">Пошта</label>
             <div class="speaker-form__svg">
               <input type="email" name="mail" id="email" class="speaker-form__input" /><svg
-                class="icon-mail speaker-form__icon-characteristic"
+                class="icon-mail speaker-form__icon--characteristic"
               >
                 <use href="./images/icons.svg#icon-Vector-6"></use>
               </svg>
