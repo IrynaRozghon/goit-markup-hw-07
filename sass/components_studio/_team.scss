@@ -20,11 +20,13 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:last-child {
+            margin-right: 0;
+        }
 }
 
-.team-img:last-child {
-    margin-right: 0;
-}
+
 
 .team-img-header {
     color: var(--secondary-text-colour);
@@ -73,20 +75,22 @@
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
+
+       &:hover,
+       &:focus {
+            fill: var(--basic-text-or-background);
+            background-color: var(--accent-colour);
+        }
 }
 
-.social-link:hover,
-.social-link:focus {
-    fill: var(--basic-text-or-background);
-    background-color: var(--accent-colour);
-}
 
 .icon-social {
     width: 20px;
     height: 20px;
+
+    &:hover,
+    &:focus {
+            fill: var(--basic-text-or-background);
+        }
 }
 
-.icon-social:hover,
-.icon-social:focus {
-    fill: var(--basic-text-or-background);
-}

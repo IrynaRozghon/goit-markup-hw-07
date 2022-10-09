@@ -6,10 +6,10 @@
 .qualities-list {
     width: 270px;
     margin-right: 30px;
-}
 
-.qualities-list:nth-child(1n) {
-    margin: 0;
+     &:nth-child(1n) {
+            margin: 0;
+        }
 }
 
 .icons-qualities {
@@ -28,13 +28,7 @@
     fill: none;
 }
 
-.qualities-list,
-.services-list,
-.team-img {
-    list-style: none;
-}
-
-.qualities-list>.qualities-list-item {
+.qualities-list-item {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

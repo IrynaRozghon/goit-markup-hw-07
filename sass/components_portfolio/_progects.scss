@@ -35,17 +35,28 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+                &:hover .product-overlay {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
 }
 
-.progect-link:hover,
-.progect-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 
 .portfolio-thumb {
     position: relative;
     overflow: hidden;
+
+   &:hover .product-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
 }
 
 .product-overlay {
@@ -67,12 +78,4 @@
     transition-timing-function: var(--cubic-bezier);
 }
 
-.portfolio-thumb:hover .product-overlay {
-    opacity: 1;
-    transform: translateY(0);
-}
 
-.progect-link:hover .portfolio-thumb>.product-overlay {
-    transform: translateY(0);
-    opacity: 1;
-}

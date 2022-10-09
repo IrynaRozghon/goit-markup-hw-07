@@ -1,4 +1,11 @@
-.categories .categories-btn {
+
+.categories {
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}.categories-btn {
     background-color: var(--others-background);
     color: var(--secondary-text-colour);
     font-family: inherit;
@@ -14,29 +21,16 @@
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-colour);
+            color: var(--basic-text-or-background);
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+                &:nth-child(5) {
+                    margin-right: 0px;
+                }
 }
 
-.categories .categories-btn:hover,
-.categories .categories-btn:focus {
-    background-color: var(--accent-colour);
-}
-
-.categories .categories-btn:nth-child(5) {
-    margin-right: 0px;
-}
-
-.categories {
-    gap: 8px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.categories-btn:hover,
-.categories-btn:focus {
-    background-color: var(--accent-colour);
-    color: var(--basic-text-or-background);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-
-}
